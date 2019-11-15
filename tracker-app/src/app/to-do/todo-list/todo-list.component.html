@@ -1,0 +1,22 @@
+<div class="container-fluid">
+    <div class="row">
+        <div col="col-md-5">
+            <table class="table">
+                    <thead>
+                        <tr>
+                            <th> </th>
+                            <th>Today Task</th> 
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <ng-container class="row" *ngFor="let todo of todoList">
+                            <tr>
+                                <td> <input type="checkbox" name="status" [checked]="todo.status? true : false"  /> </td>
+                                <td> {{todo.task}}</td>
+                            </tr>
+                        </ng-container>    
+                    </tbody>
+                </table>
+        </div>
+    </div>  
+</div>
