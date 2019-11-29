@@ -3,9 +3,11 @@ import { RouterModule } from '@angular/router';
 import { TodoListComponent } from './todo-list/todo-list.component';
 
 
-const routes = [
+const routes = [{
+
+  path:'todo',children:[
   {
-    path: 'todo',
+    path: '',
     component: TodoListComponent
   },
   {
@@ -13,6 +15,7 @@ const routes = [
     component: TodoListComponent
   }
 ]
+}]
 
 @NgModule({
     imports: [RouterModule.forChild(routes)],

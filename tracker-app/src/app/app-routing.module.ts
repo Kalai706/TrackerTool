@@ -7,6 +7,10 @@ const routes = [
   {
     path: 'admin',
     component: AdminComponent
+  },
+  {
+    path:'todo',
+    loadChildren: './to-do/to-do.module#ToDoModule'
   }
 ]
 
